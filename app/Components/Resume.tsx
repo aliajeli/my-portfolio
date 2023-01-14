@@ -1,8 +1,8 @@
-import Image from "next/image";
 // import { SocialIcon } from "react-social-icons";
 import InfoListItem from "./InfoListItem";
 import Section from "./Section";
 import SkillListItem from "./SkillListItem";
+import ResumeHeader from "./ResumeHeader";
 import {
   SiTypescript,
   SiTailwindcss,
@@ -21,45 +21,7 @@ const Resume = () => {
     group-[.resume]/aside:translate-x-0 group-[.resume]/aside:opacity-100
     xl:relative xl:w-96 xl:translate-x-0 xl:opacity-100"
     >
-      <section className="h- relative flex flex-col auto-rows-min flex-wrap items-center gap-3">
-        <div className="w-40 h-40 absolute top-0 left-1/2 -translate-x-1/2 overflow-hidden bg-dark dark:bg-light rounded-full z-20 border-4 border-accent">
-          <Image src="/User.png" alt="User" width={160} height={160} />
-        </div>
-        <div className="w-40 h-40 border animate-ping border-accent bg-dark dark:bg-light rounded-full" />
-        <h2 className="mx-auto text-lg text-dark dark:text-light font-semibold">
-          Ali Ajeli Lahiji
-        </h2>
-        <h2 className="mx-auto text-sm text-dark/50 dark:text-light/50 font-semibold">
-          Frontend Developer
-        </h2>
-        <div className="h-10 w-full flex flex-col flex-wrap place-content-center gap-3">
-          {/* <SocialIcon
-            url="https://github.com/#"
-            bgColor="transparent"
-            fgColor="rgb(var(--color-accent))"
-          />
-          <SocialIcon
-            url="https://linkedin.com/#"
-            bgColor="transparent"
-            fgColor="rgb(var(--color-accent))"
-          />
-          <SocialIcon
-            url="https://instagram.com/#"
-            bgColor="transparent"
-            fgColor="rgb(var(--color-accent))"
-          />
-          <SocialIcon
-            url="https://twitter.com/#"
-            bgColor="transparent"
-            fgColor="rgb(var(--color-accent))"
-          />
-          <SocialIcon
-            url="https://telegram.com/#"
-            bgColor="transparent"
-            fgColor="rgb(var(--color-accent))"
-          /> */}
-        </div>
-      </section>
+      <ResumeHeader />
       <section className="flex-[2] w-10/12 mx-auto bg-accent/50 overflow-y-scroll scrollbar-thin scrollbar-track-accent/10 scrollbar-thumb-accent grid grid-flow-row gap-[1px] py-[1px]">
         <Section title="My Info">
           <InfoListItem title="Birthday" description="21 Mar 1990" />
