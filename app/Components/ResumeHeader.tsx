@@ -26,7 +26,7 @@ const ResumeHeader = ({ className }: { className?: string }) => {
       <h2 className="mx-auto text-sm text-dark/50 dark:text-light/50 font-semibold">
         Frontend Developer
       </h2>
-      <ul className="h-10 w-full flex flex-col flex-wrap place-content-center gap-3">
+      <section className="h-10 w-full flex flex-col flex-wrap place-content-center gap-3">
         <Link href="" className="">
           <FaGithub className="fill-accent w-full h-full" />
         </Link>
@@ -39,7 +39,7 @@ const ResumeHeader = ({ className }: { className?: string }) => {
         <Link href="" className="">
           <FaInstagram className="fill-accent w-full h-full" />
         </Link>
-      </ul>
+      </section>
     </section>
   );
 };
