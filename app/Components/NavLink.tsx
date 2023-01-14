@@ -1,0 +1,38 @@
+"use client";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
+
+const NavLink = ({
+  className,
+  href,
+  activeClassName,
+  children,
+}: {
+  className: string;
+  href: string;
+  activeClassName?: string;
+  children: React.ReactNode;
+}) => {
+  const pathname = usePathname();
+
+  // First we get the viewport height and we multiple it by 1% to get a value for a vh unit
+  let vh = window.innerHeight * 0.01;
+  // Then we set the value in the --vh custom property to the root of the document
+  document.documentElement.style.setProperty("--vh", `${vh}px`);
+
+  // We listen to the resize event
+  window.addEventListener("resize", () => {
+    // We execute the same script as before
+    let vh = window.innerHeight * 0.01;
+    document.documentElement.style.setProperty("--vh", `${vh}px`);
+  });
+  return (
+    <Link
+      href={href}
+      className={className + " " + (href === pathname && activeClassName)}
+    >
+      {children}
+    </Link>
+  );
+};
+export default NavLink;

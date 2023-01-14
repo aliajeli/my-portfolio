@@ -1,8 +1,12 @@
-import Image from "next/image";
-import { Inter } from "@next/font/google";
+import React from "react";
+import { Dancing_Script } from "@next/font/google";
+const dancingScript = Dancing_Script({ subsets: ["latin"] });
 
-const inter = Inter({ subsets: ["latin"] });
-
-export default function Home() {
-  return <main className="">Home Page</main>;
-}
+const Home = () => {
+  return (
+    <main className="bg-light dark:bg-dark flex-[2] border-0 xl:border border-accent/30 xl:rounded-lg">
+      <h1>Home Page </h1>
+    </main>
+  );
+};
+export default Home;
