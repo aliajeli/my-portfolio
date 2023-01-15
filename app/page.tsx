@@ -5,10 +5,8 @@ const dancingScript = Dancing_Script({ subsets: ["latin"] });
 
 const Home = () => {
   return (
-    <main className="bg-light dark:bg-dark border-0 xl:border border-accent/30 xl:rounded-lg grid grid-rows-[50%_50%]">
-      <section className="">
-        <Coding className="fill-accent h-full max-w-[90%] mx-auto" />
-      </section>
+    <main className="bg-light dark:bg-dark border-0 xl:border border-accent/30 xl:rounded-lg grid grid-rows-[50%_50%] xl:grid-rows-1 xl:grid-cols-[50%_50%]">
+      <Coding className="fill-accent h-full max-w-[90%] mx-auto" />
       <section className="text-2xl flex flex-col flex-wrap place-content-center gap-16">
         <h2 className="text-center">
           I'm{" "}
