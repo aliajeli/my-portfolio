@@ -7,7 +7,7 @@ const Footer = ({ className }: { className: string }) => {
         "border xl:border-x border-accent/30 xl:rounded-t-lg grid place-content-center"
       }
     >
-      <h2 className="text-dark/50 dark:text-light/50">
+      <h2 className="text-dark/50 dark:text-light/50 text-xs xl:text-sm">
         {"Created by Ali Ajeli Lahiji, with {Nextjs, Tailwind, Prisma}"}
       </h2>
     </footer>
