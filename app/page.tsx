@@ -1,21 +1,23 @@
 import React from "react";
+import Coding from "../Components/SVG/Coding";
 import { Dancing_Script } from "@next/font/google";
-import Coding from "./Components/SVG/Coding";
 const dancingScript = Dancing_Script({ subsets: ["latin"] });
 
 const Home = () => {
   return (
-    <main className="bg-light dark:bg-dark border-0 xl:border border-accent/30 xl:rounded-lg grid grid-rows-[50%_50%] xl:grid-rows-1 xl:grid-cols-[50%_50%]">
-      <Coding className="fill-accent h-full max-w-[90%] mx-auto" />
-      <section className="text-2xl flex flex-col flex-wrap place-content-center gap-16">
+    <main className="bg-light dark:bg-dark border-0 border-accent/30 flex flex-col lg:rounded-lg md:flex-row lg:border">
+      <section className="h-full w-full grid place-items-center">
+        <Coding className="fill-accent w-3/4" />
+      </section>
+      <section className="text-2xl flex flex-col flex-wrap justify-evenly h-full w-full">
         <h2 className="text-center">
-          I'm{" "}
+          {"I'm "}
           <span
             className={
               dancingScript.className + " " + "font-black text-4xl text-accent"
             }
           >
-            Ali Ajeli Lahiji
+            {"Ali Ajeli Lahiji"}
           </span>
         </h2>
         <h3 className="text-center">Frontend Developer from</h3>
