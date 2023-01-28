@@ -18,24 +18,24 @@ const Menu = ({ className }: { className: string }) => {
         className
       }
     >
-      <DarkMode className="fill-accent absolute top-0 left-0 w-12 h-12 mb-20" />
+      <DarkMode className="fill-accent absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-8 h-8 mb-20" />
 
       <nav className="grid gap-2 grid-flow-row text-sm">
         <NavItem title="Home" href="/">
-          <RiHome5Fill className="fill-accent mx-auto w-12 h-12" />
+          <RiHome5Fill className="fill-accent mx-auto w-8 h-8" />
         </NavItem>
         <NavItem title="Projects" href="/projects">
-          <RiLayoutMasonryFill className="fill-accent mx-auto w-12 h-12" />
+          <RiLayoutMasonryFill className="fill-accent mx-auto w-8 h-8" />
         </NavItem>
         <NavItem title="Blog" href="/blog">
-          <RiArticleFill className="fill-accent mx-auto w-12 h-12" />
+          <RiArticleFill className="fill-accent mx-auto w-8 h-8" />
         </NavItem>
         <NavItem title="Contact" href="/contact">
-          <RiAccountBoxFill className="fill-accent mx-auto w-12 h-12" />
+          <RiAccountBoxFill className="fill-accent mx-auto w-8 h-8" />
         </NavItem>
       </nav>
 
-      <RiTranslate2 className="fill-accent mx-auto w-12 h-12" />
+      <RiTranslate2 className="fill-accent mx-auto w-8 h-8" />
     </aside>
   );
 };

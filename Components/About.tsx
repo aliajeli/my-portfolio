@@ -14,7 +14,7 @@ import TitleDescription from "./TitleDescription";
 const About = () => {
   return (
     <aside
-      className="absolute top-0 left-0 h-full p-2 pb-2 flex flex-col border-x border-0 border-accent/30 w-full bg-light dark:bg-dark -translate-x-full opacity-0 transition-all duration-700 xl:duration-150 z-40
+      className="absolute top-0 left-0 h-full p-2 pb-2 flex flex-col border-x border-0 border-accent/30 w-full bg-light dark:bg-dark -translate-x-full opacity-0 transition-all duration-700 z-40
     group-[.about]/aside:translate-x-0 group-[.about]/aside:opacity-100
     sm:w-96 
     2xl:relative 2xl:translate-x-0 2xl:opacity-100"
@@ -22,10 +22,10 @@ const About = () => {
       <Section className="py-0">
         <section className={"relative flex justify-between" + " "}>
           <section className="flex-[2] flex flex-col justify-center gap-3">
-            <h2 className=" w-full text-lg text-center text-dark dark:text-light font-semibold">
+            <h2 className=" w-full text-lg text-center text-dark dark:text-light font-semibold duration-700">
               Ali Ajeli Lahiji
             </h2>
-            <h2 className=" w-full text-sm text-center text-dark/50 dark:text-light/50 font-semibold">
+            <h2 className=" w-full text-sm text-center text-dark/50 dark:text-light/50 font-semibold duration-700">
               Frontend Developer
             </h2>
             <section className="h-10 w-full flex justify-evenly">
@@ -43,12 +43,12 @@ const About = () => {
               </Link>
             </section>
           </section>
-          <div className="w-36 h-36 rounded-lg border-4 border-accent bg-dark dark:bg-light overflow-hidden">
+          <div className="w-36 h-36 rounded-lg border-4 border-accent bg-dark dark:bg-light overflow-hidden duration-700">
             <Image src="/User.png" alt="User" width={144} height={144} />
           </div>
         </section>
       </Section>
-      <section className="flex-[2] w-full mx-auto bg-accent/50 overflow-y-scroll scrollbar-thin scrollbar-track-accent/10 scrollbar-thumb-accent grid grid-flow-row gap-[1px] py-[1px]">
+      <section className="flex-[2] w-full mx-auto overflow-y-scroll scrollbar-thin scrollbar-track-accent/10 scrollbar-thumb-accent grid grid-flow-row gap-[1px] py-[1px]">
         <Section title="My Info">
           <TitleDescription title="Birthday :" description="21 Mar 1990" />
           <TitleDescription title="Age :" description="32" />
@@ -67,7 +67,7 @@ const About = () => {
         </Section>
         {/* <Section title="Experiance"></Section> */}
       </section>
-      <button className="h-10 w-40 bg-cta text-light dark:text-dark border border-cta rounded-full mx-auto mt-2">
+      <button className="h-10 w-40 bg-cta text-light dark:text-dark border-4 border-cta rounded-full mx-auto mt-2 duration-700 hover:text-cta hover:bg-light dark:hover:bg-dark dark:hover:text-cta">
         Download CV
       </button>
     </aside>

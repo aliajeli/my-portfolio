@@ -1,11 +1,11 @@
 import React from "react";
 import Coding from "../Components/SVG/Coding";
-import { Dancing_Script } from "@next/font/google";
-const dancingScript = Dancing_Script({ subsets: ["latin"] });
+import { Roboto } from "@next/font/google";
+const roboto = Roboto({ subsets: ["latin"], weight: "500", style: "italic" });
 
 const Home = () => {
   return (
-    <main className="bg-light dark:bg-dark border-0 border-accent/30 flex flex-col lg:rounded-lg md:flex-row lg:border">
+    <main className="bg-light dark:bg-dark border-0 border-accent/30 flex flex-col lg:rounded-lg md:flex-row lg:border text-dark dark:text-light duration-700">
       <section className="h-full w-full grid place-items-center">
         <Coding className="fill-accent w-3/4" />
       </section>
@@ -14,7 +14,7 @@ const Home = () => {
           {"I'm "}
           <span
             className={
-              dancingScript.className + " " + "font-black text-4xl text-accent"
+              roboto.className + " " + "font-black text-4xl text-accent px-3"
             }
           >
             {"Ali Ajeli Lahiji"}

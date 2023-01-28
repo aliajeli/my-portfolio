@@ -4,10 +4,10 @@ const Footer = ({ className }: { className: string }) => {
       className={
         className +
         " " +
-        "border xl:border-x border-accent/30 lg:rounded-t-lg grid place-content-center"
+        "border xl:border-x border-accent/30 lg:rounded-t-lg grid place-content-center duration-700"
       }
     >
-      <h2 className="text-dark/50 dark:text-light/50 text-center text-[0.65rem] sm:text-sm xl:text-sm">
+      <h2 className="text-dark/50 dark:text-light/50 text-center text-[0.65rem] sm:text-sm xl:text-sm duration-700">
         {"Created by Ali Ajeli Lahiji, with {Nextjs, Tailwind, Prisma}"}
       </h2>
     </footer>

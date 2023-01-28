@@ -15,7 +15,7 @@ const Section = ({
   return (
     <section
       className={
-        "w-full flex flex-col gap-2 p-3 bg-light dark:bg-dark text-xs sm:text-sm " +
+        "w-full flex flex-col gap-3 p-3 text-xs sm:text-sm text-dark dark:text-light duration-700" +
         " " +
         sectionClassName
       }
@@ -29,6 +29,7 @@ const Section = ({
       <section className={"w-full flex flex-col gap-2 py-2" + " " + className}>
         {children}
       </section>
+      <div className="bg-accent h-[1px] w-full" />
     </section>
   );
 };

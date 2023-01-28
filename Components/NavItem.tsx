@@ -18,7 +18,7 @@ const NavItem = ({
       {children}
       <span
         className="
-        opacity-0 -translate-y-10 bg-dark dark:bg-light transition-colors duration-500 mx-auto text-center text-light dark:text-dark w-3/4 rounded-md 
+        opacity-0 -translate-y-10 bg-dark dark:bg-light transition-colors duration-500 mx-auto text-center text-light text-xs py-0.5 dark:text-dark w-3/4 rounded-md 
       group-hover/nav:opacity-100 group-hover/nav:translate-y-0 group-hover/nav:duration-500
       group-[.active]/nav:opacity-100 group-[.active]/nav:translate-y-0 
       before:w-2 before:h-2 dark:before:bg-light before:bg-dark before:absolute relative before:-top-1 before:left-1/2 before:-translate-x-1/2 before:rotate-45 before:rounded-tl-sm before:transition-colors before:duration-500 "

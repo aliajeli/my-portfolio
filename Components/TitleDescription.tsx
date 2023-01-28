@@ -8,7 +8,13 @@ const TitleDescription = ({
   className?: string;
 }) => {
   return (
-    <h4 className={"flex justify-between" + " " + className}>
+    <h4
+      className={
+        "flex justify-between text-dark dark:text-light duration-700" +
+        " " +
+        className
+      }
+    >
       <span className="">{title}</span>
       <span className="">{description}</span>
     </h4>

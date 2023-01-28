@@ -1,7 +1,7 @@
 "use client";
 import Logo from "./SVG/Logo";
-import { Dancing_Script } from "@next/font/google";
-const dancingScript = Dancing_Script({ subsets: ["latin"] });
+import { Roboto } from "@next/font/google";
+const roboto = Roboto({ subsets: ["latin"], weight: "500", style: "italic" });
 
 import {
   RiProfileFill,
@@ -27,7 +27,7 @@ const Header = ({ className }: { className: string }) => {
       className={
         className +
         " " +
-        "flex flex-wrap content-center justify-between px-4 border-b lg:border-x border-accent/30 lg:rounded-b-lg"
+        "flex flex-wrap content-center justify-between px-4 border-b lg:border-x border-accent/30 lg:rounded-b-lg duration-700"
       }
     >
       <section>
@@ -36,18 +36,18 @@ const Header = ({ className }: { className: string }) => {
           className="relative cursor-pointer w-12 h-12 z-50 2xl:hidden"
         >
           <RiProfileFill
-            className="w-full h-full fill-accent absolute top-0 left-0 opacity-100
+            className="w-4/6 h-4/6 fill-accent absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-100
         group-[.about]/aside:opacity-0 duration-700"
           />
           <RiArrowLeftSLine
-            className="w-full h-full fill-accent absolute top-0 left-0 opacity-0
+            className="w-4/6 h-4/6 fill-accent absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-0
           group-[.about]/aside:opacity-100 duration-700"
           />
         </button>
       </section>
       <section className="flex flex-wrap gap-4 items-center text-accent font-bold text-2xl animate-pulse">
         <Logo className="fill-accent h-12" />
-        <h1 className={dancingScript.className}>Ali Ajeli Lahiji</h1>
+        <h1 className={roboto.className}>Ali Ajeli Lahiji</h1>
       </section>
       <section>
         <button
@@ -55,11 +55,11 @@ const Header = ({ className }: { className: string }) => {
           className="relative cursor-pointer w-12 h-12 z-10 lg:hidden"
         >
           <RiMenuLine
-            className="w-full h-full fill-accent absolute top-0 left-0 opacity-100
+            className="w-4/6 h-4/6 fill-accent absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-100
         group-[.menu]/aside:opacity-0 group-[.about]/aside:opacity-0 duration-700"
           />
           <RiMenuUnfoldLine
-            className="w-full h-full fill-accent absolute top-0 left-0 opacity-0 
+            className="w-4/6 h-4/6 fill-accent absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-0 
         group-[.menu]/aside:opacity-100 duration-700"
           />
         </button>

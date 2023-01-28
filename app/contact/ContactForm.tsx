@@ -39,7 +39,7 @@ const ContactForm = () => {
         defaultValue=""
         placeholder="Whats your name ?"
         {...register("name", { required: true })}
-        className="p-2 rounded-lg text-accent outline outline-[3px] focus:outline-accent dark:focus:outline-accent placeholder:text-accent/50 placeholder:text-sm bg-light dark:bg-dark dark:outline-light/50 outline-dark/50"
+        className="p-2 rounded-lg text-accent outline outline-[3px] focus:outline-accent dark:focus:outline-accent placeholder:text-accent/50 placeholder:text-sm bg-light dark:bg-dark dark:outline-light/50 outline-dark/50 duration-700"
       />
       <span className="h-6 px-3 grid items-center text-xs text-red-500">
         {errors.name && "Please enter your Name"}
@@ -49,7 +49,7 @@ const ContactForm = () => {
         defaultValue=""
         placeholder="Whats your email address ?"
         {...register("email", { required: true })}
-        className="p-2 rounded-lg text-accent text-sm outline outline-[3px] focus:outline-accent dark:focus:outline-accent placeholder:text-accent/50 placeholder:text-sm bg-light dark:bg-dark dark:outline-light/50 outline-dark/50"
+        className="p-2 rounded-lg text-accent text-sm outline outline-[3px] focus:outline-accent dark:focus:outline-accent placeholder:text-accent/50 placeholder:text-sm bg-light dark:bg-dark dark:outline-light/50 outline-dark/50 duration-700"
       />
       <span className="h-6 px-3 grid items-center text-xs text-red-500">
         {errors.email && "Please enter your Email Address"}
@@ -58,14 +58,14 @@ const ContactForm = () => {
         placeholder="What can i do for you ?"
         rows={8}
         {...register("message", { required: true })}
-        className="p-2 rounded-lg text-accent outline outline-[3px] focus:outline-accent dark:focus:outline-accent placeholder:text-accent/50 placeholder:text-sm bg-light dark:bg-dark dark:outline-light/50 outline-dark/50 "
+        className="p-2 rounded-lg text-accent outline outline-[3px] focus:outline-accent dark:focus:outline-accent placeholder:text-accent/50 placeholder:text-sm bg-light dark:bg-dark dark:outline-light/50 outline-dark/50 duration-700"
       />
       <span className="h-6 px-3 grid items-center text-xs text-red-500">
         {errors.message && "Please enter a message"}
       </span>
       <button
         type="submit"
-        className="bg-accent p-5 rounded-lg text-light dark:text-dark border-4 border-accent cursor-pointer dark:hover:bg-dark dark:hover:text-accent hover:bg-light hover:text-accent"
+        className="bg-accent p-5 rounded-lg text-light dark:text-dark border-4 border-accent cursor-pointer dark:hover:bg-dark dark:hover:text-accent hover:bg-light hover:text-accent duration-700"
       >
         Send me your message
       </button>
